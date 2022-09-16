@@ -1,0 +1,70 @@
+/*
+ * Versión: 0.0.1
+ */
+package Clases;
+
+/**
+ *
+ * @author ALEXIS ANTHONY BENDEZU.
+ */
+public class Docente extends Persona {
+
+    private int horas;
+    private int tarifa;
+
+    public Docente() {
+
+    }
+
+    public int getHoras() {
+        return horas;
+    }
+
+    public void setHoras(int horas) {
+        this.horas = horas;
+    }
+
+    public int getTarifa() {
+        return tarifa;
+    }
+
+    public void setTarifa(int tarifa) {
+        this.tarifa = tarifa;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public float calcularSueldo() {
+        return horas * tarifa;
+    }
+
+    public String generaCorreo() {
+        return super.generarCorreo();
+    }
+
+    public float mostrarCalcularSueldo() {
+        return calcularSueldo();
+    }
+}
